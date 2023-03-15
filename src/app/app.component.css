@@ -1,0 +1,18 @@
+.section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1vh;
+}
+
+input{
+    background-color: rgba(209, 219, 222, 0.849);
+    border: 0;
+    outline: 0;
+    padding: 1vh;
+}
+
+input:focus{
+    border-bottom: 1px solid royalblue;
+}
