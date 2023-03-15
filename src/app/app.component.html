@@ -1,23 +1,23 @@
 <div class="container">
-  <form>
+  <form (ngSubmit)="onSubmit()" #form="ngForm">
     <div class="section">
       <label for="name">
         NAME
       </label>
-      <input type="text" id="name">
+      <input type="text" id="name" name="clientname" ngModel>
     </div>
     <div class="section">
       <label for="email">
         EMAIL
       </label>
-      <input id="email" type="text">
+      <input id="email" type="text" name="email" ngModel email>
     </div>
     <div class="section">
       <label for="phone">
         PHONE
       </label>
-      <input id="phone" type="text">
+      <input id="phone" type="text" name="phone" ngModel>
     </div>
-    <button type="submit">SUBMIT</button>
+    <button type="submit" [disabled]="!form.valid">SUBMIT</button>
   </form>
 </div>

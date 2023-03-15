@@ -16,3 +16,8 @@ input{
 input:focus{
     border-bottom: 1px solid royalblue;
 }
+
+input.ng-invalid{
+    background-color: rgba(255, 0, 0, 0.2);
+    border-bottom: 2px solid red;
+}
