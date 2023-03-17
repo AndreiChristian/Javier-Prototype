@@ -8,6 +8,9 @@ import { SectionComponent } from './section/section.component';
 import { OptionComponent } from './option/option.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SectionItemsComponent } from './section-items/section-items.component';
+import { StoreModule } from '@ngrx/store';
+import { addOptionReducer } from './option/store/add-option.reducer';
+import { NgrxComponent } from './ngrx/ngrx.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +18,17 @@ import { SectionItemsComponent } from './section-items/section-items.component';
     SectionComponent,
     OptionComponent,
     SidebarComponent,
-    SectionItemsComponent
+
+    SectionItemsComponent,
+     NgrxComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    StoreModule.forRoot({ addOption: addOptionReducer }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
