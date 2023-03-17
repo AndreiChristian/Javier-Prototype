@@ -15,7 +15,7 @@ export class SidebarComponent {
   constructor(
     private store: Store<{
       addCustomerData: {
-        clientData: { name; email; phone };
+        clientData: { name: string; email: string; phone: string };
       };
     }>
   ) {}

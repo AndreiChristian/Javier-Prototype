@@ -34,8 +34,9 @@
                     </svg>
                 </div>
             </div>
-            <p>hello</p>
-            <p> {{(user|async).clientData.name}} </p>
-            <p> {{(user|async).clientData.email}} </p>
-            <p> {{(user|async).clientData.phone}} </p>
+            <div class="section">
+                <p> {{(user|async).clientData.name}} </p>
+                <p> {{(user|async).clientData.email}} </p>
+                <p> {{(user|async).clientData.phone}} </p>
+            </div>
         </aside>

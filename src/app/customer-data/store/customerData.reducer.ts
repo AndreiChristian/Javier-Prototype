@@ -2,9 +2,9 @@ import { Action } from '@ngrx/store';
 
 const initiateState = {
   clientData: {
-    name: 'ANDREI',
-    email: 'NETOIU',
-    phone: 'ADDAADSAAS',
+    name: '',
+    email: '',
+    phone: '',
   },
 };
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
+import { AddClientData } from './store/customerData.action';
 
 @Component({
   selector: 'app-customer-data',
@@ -13,7 +14,13 @@ export class CustomerDataComponent {
     phone: '',
   };
 
-  constructor(  private store:Store ) {}
+  constructor(
+    private store: Store<{
+      addCustomerData: {
+        clientData: { name: string; email: string; phone: string };
+      };
+    }>
+  ) {}
 
   // onAddItem() {
   //   console.log(this.newItem);
@@ -22,4 +29,9 @@ export class CustomerDataComponent {
   //   );
   //     this.newItem = '';
   // }
+
+  addCustomerData() {
+    console.log(this.customer);
+    this.store.dispatch(new AddClientData({ ...this.customer }));
+  }
 }

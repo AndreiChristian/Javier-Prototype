@@ -10,7 +10,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SectionItemsComponent } from './section-items/section-items.component';
 import { StoreModule } from '@ngrx/store';
 import { addOptionReducer } from './option/store/add-option.reducer';
-import { NgrxComponent } from './ngrx/ngrx.component';
 import { CustomerDataComponent } from './customer-data/customer-data.component';
 import { addCustomerDataReducer } from './customer-data/store/customerData.reducer';
 
@@ -20,9 +19,7 @@ import { addCustomerDataReducer } from './customer-data/store/customerData.reduc
     SectionComponent,
     OptionComponent,
     SidebarComponent,
-
     SectionItemsComponent,
-    NgrxComponent,
     CustomerDataComponent,
   ],
   imports: [
