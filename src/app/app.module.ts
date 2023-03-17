@@ -11,6 +11,8 @@ import { SectionItemsComponent } from './section-items/section-items.component';
 import { StoreModule } from '@ngrx/store';
 import { addOptionReducer } from './option/store/add-option.reducer';
 import { NgrxComponent } from './ngrx/ngrx.component';
+import { CustomerDataComponent } from './customer-data/customer-data.component';
+import { addCustomerDataReducer } from './customer-data/store/customerData.reducer';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,17 @@ import { NgrxComponent } from './ngrx/ngrx.component';
     SidebarComponent,
 
     SectionItemsComponent,
-     NgrxComponent,
+    NgrxComponent,
+    CustomerDataComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    StoreModule.forRoot({ addOption: addOptionReducer }),
+    StoreModule.forRoot({
+      addOption: addOptionReducer,
+      addCustomerData: addCustomerDataReducer,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
