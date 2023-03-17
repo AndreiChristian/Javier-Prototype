@@ -7,10 +7,14 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  @ViewChild('form') form: NgForm;
-
-  onSubmit() {
-    console.log(this.form.value);
-  }
+  sections: string[] = [
+    'FOOD & BEVERAGE',
+    ' LINEN & TOILETRIES',
+    'FITNESS',
+    'TEMPERATURE',
+    'ENTERTAINMENT',
+    'SECURITY',
+    'SERVICES',
+    'OTHERS',
+  ];
 }
-
