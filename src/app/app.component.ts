@@ -1,20 +1,18 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { SectionService } from './section.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  sections: string[] = [
-    'FOOD & BEVERAGE',
-    ' LINEN & TOILETRIES',
-    'FITNESS',
-    'TEMPERATURE',
-    'ENTERTAINMENT',
-    'SECURITY',
-    'SERVICES',
-    'OTHERS',
-  ];
+export class AppComponent implements OnInit {
+  sections: string[] = [];
+
+  constructor(private sectionService: SectionService) {}
+
+  ngOnInit() {
+    this.sections = this.sectionService.sections;
+  }
 }
