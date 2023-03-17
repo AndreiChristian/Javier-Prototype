@@ -1,0 +1,14 @@
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vh;
+}
+
+.important{
+    color: red;
+}
+
+.not{
+    color: green;
+}

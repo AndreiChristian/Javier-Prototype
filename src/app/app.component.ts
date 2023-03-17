@@ -8,7 +8,7 @@ import { SectionService } from './section.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  sections: string[] = [];
+  sections: any = [];
 
   constructor(private sectionService: SectionService) {}
 

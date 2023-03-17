@@ -1,0 +1,11 @@
+<div class="option">
+    <div class="checkbox">
+
+    </div>
+    <div class="name">
+        {{option.name}}
+    </div>
+    <button  [ngClass]=" option.important? 'important' :'not' " (click)="onSelectImportant()" >
+        MUST
+    </button>
+</div>
