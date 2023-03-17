@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { SectionComponent } from './section/section.component';
 import { OptionComponent } from './option/option.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { SectionItemsComponent } from './section-items/section-items.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SectionComponent,
     OptionComponent,
-    SidebarComponent
+    SidebarComponent,
+    SectionItemsComponent
   ],
   imports: [
     BrowserModule,

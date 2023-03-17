@@ -6,7 +6,7 @@ aside{
     height: 100vh;
     background-color: white;
     padding: 1vw;
-    box-shadow: 0 0 4px 4px #cccccc58;
+    box-shadow: 0 0 4px 4px rgba(65, 105, 225, 0.335);
 
 }
 

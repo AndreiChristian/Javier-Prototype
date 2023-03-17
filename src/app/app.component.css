@@ -4,5 +4,5 @@ section{
     padding: 1vw;
     margin: 1vw;
     border-radius: 20px;
-    box-shadow: 0 0 4px 4px #cccccc58;
+    box-shadow: 0 0 3px 3px rgba(65, 105, 225, 0.171);
 }
