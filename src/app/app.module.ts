@@ -11,7 +11,8 @@ import { SectionItemsComponent } from './section-items/section-items.component';
 import { StoreModule } from '@ngrx/store';
 import { addOptionReducer } from './option/store/add-option.reducer';
 import { CustomerDataComponent } from './customer-data/customer-data.component';
-import { addCustomerDataReducer } from './customer-data/store/customerData.reducer';
+
+import { addClientDataReducer } from './store/clientData.reducer';
 
 @NgModule({
   declarations: [
@@ -27,8 +28,7 @@ import { addCustomerDataReducer } from './customer-data/store/customerData.reduc
     AppRoutingModule,
     FormsModule,
     StoreModule.forRoot({
-      addOption: addOptionReducer,
-      addCustomerData: addCustomerDataReducer,
+      addClientData: addClientDataReducer,
     }),
   ],
   providers: [],

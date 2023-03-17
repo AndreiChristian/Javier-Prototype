@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AddClientData } from './store/customerData.action';
+import { Client } from '../interfaces';
+import { AddClientData } from '../store/clientData.actions';
+
 
 @Component({
   selector: 'app-customer-data',
@@ -8,27 +10,13 @@ import { AddClientData } from './store/customerData.action';
   styleUrls: ['./customer-data.component.css'],
 })
 export class CustomerDataComponent {
-  customer = {
+  customer: Client = {
     name: '',
     email: '',
     phone: '',
   };
 
-  constructor(
-    private store: Store<{
-      addCustomerData: {
-        clientData: { name: string; email: string; phone: string };
-      };
-    }>
-  ) {}
-
-  // onAddItem() {
-  //   console.log(this.newItem);
-  //   this.store.dispatch(
-  //     new AddOption(this.newItem)
-  //   );
-  //     this.newItem = '';
-  // }
+  constructor(private store: Store<{ addClientData: Client }>) {}
 
   addCustomerData() {
     console.log(this.customer);

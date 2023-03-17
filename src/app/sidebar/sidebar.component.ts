@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
+import { Client } from '../interfaces';
+import { AddClientData } from '../store/clientData.actions';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,24 +10,11 @@ import { Observable } from 'rxjs';
   styleUrls: ['./sidebar.component.css'],
 })
 export class SidebarComponent {
-  user: Observable<{
-    clientData: { name: string; email: string; phone: string };
-  }>;
+  client: Observable<Client>;
 
-  constructor(
-    private store: Store<{
-      addCustomerData: {
-        clientData: { name: string; email: string; phone: string };
-      };
-    }>
-  ) {}
+  constructor(private store: Store<{ addClientData: Client }>) {}
 
   ngOnInit(): void {
-    this.user = this.store.select('addCustomerData');
-    console.log(
-      this.user.subscribe((data) => {
-        console.log(data);
-      })
-    );
+    this.client = this.store.select('addClientData');
   }
 }
