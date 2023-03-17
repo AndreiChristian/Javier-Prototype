@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SectionComponent } from './section/section.component';
 import { OptionComponent } from './option/option.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SectionComponent,
-    OptionComponent
+    OptionComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

@@ -97,5 +97,65 @@ export class SectionService {
         },
       ],
     },
+    {
+      id: 's2',
+      name: 'Experiences',
+      items: [
+        {
+          id: 's2i1',
+          name: 'Activities',
+          options: [
+            {
+              id: 's2i1o1',
+              name: 'Hiking',
+              value: false,
+              important: false,
+            },
+            {
+              id: 's2i1o2',
+              name: 'Biking',
+              value: false,
+              important: false,
+            },
+            {
+              id: 's2i1o3',
+              name: 'Camping',
+              value: false,
+              important: false,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 's3',
+      name: 'Staff',
+      items: [
+        {
+          id: 's3i1',
+          name: 'Staff',
+          options: [
+            {
+              id: 's3i1o1',
+              name: 'Chef',
+              value: false,
+              important: false,
+            },
+            {
+              id: 's3i1o2',
+              name: 'Guide',
+              value: false,
+              important: false,
+            },
+            {
+              id: 's3i1o3',
+              name: 'Driver',
+              value: false,
+              important: false,
+            },
+          ],
+        },
+      ],
+    },
   ];
 }
