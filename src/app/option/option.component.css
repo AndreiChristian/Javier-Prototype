@@ -1,14 +1,46 @@
-.option{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1vh;
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3vh;
+  margin: 0.5vh 0;
+  height: 3vh;
 }
 
-.important{
-    color: red;
+.checkbox {
+  height: 100%;
+  width: 3vh;
+  background-color: rgba(65, 105, 225, 0.162);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.not{
-    color: green;
+.checkbox svg {
+  height: 3vh;
+  width: 3vh;
+  stroke: royalblue;
+  stroke-width: 2px;
+}
+
+.name {
+  font-size: 1.4rem;
+}
+
+.important {
+  font-size: 0.8rem;
+  border: 1px solid orangered;
+  color: white;
+  background-color: orangered;
+
+  border-radius: 5px;
+}
+
+.not {
+  font-size: 0.8rem;
+  border: 1px solid royalblue;
+  color: royalblue;
+  background-color: inherit;
+  border-radius: 5px;
 }

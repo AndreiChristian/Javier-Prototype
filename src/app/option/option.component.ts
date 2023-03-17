@@ -9,7 +9,12 @@ export class OptionComponent {
   @Input() option: any;
 
 
+
   onSelectImportant() {
     this.option.important = !this.option.important;
+  }
+
+  onSelectOption() {
+    this.option.value = !this.option.value;
   }
 }

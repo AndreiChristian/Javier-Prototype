@@ -1,11 +1,19 @@
 <div class="option">
-    <div class="checkbox">
+    <div class="checkbox" (click)="onSelectOption()" >
+        <svg *ngIf="option.value === true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6
+                6 9-13.5" />
+            </svg>
 
+        </div>
+        <div class="name" (click)="onSelectOption()" >
+            {{option.name | uppercase }}
+        </div>
+        <button [ngClass]=" option.important? 'important' :'not' "
+            (click)="onSelectImportant()">
+            MUST HAVE
+        </button>
     </div>
-    <div class="name">
-        {{option.name}}
-    </div>
-    <button  [ngClass]=" option.important? 'important' :'not' " (click)="onSelectImportant()" >
-        MUST
-    </button>
-</div>

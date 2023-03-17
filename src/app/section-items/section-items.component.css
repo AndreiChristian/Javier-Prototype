@@ -1,0 +1,37 @@
+h6{
+    font-size: 1rem;
+}
+
+h6 svg{
+    width: 2vh;
+}
+
+.form{
+    height: 5vh;
+    margin-top: 2vh;
+}
+
+input{
+    border: none;
+    outline: none;
+    padding: 0 1vh;
+    height: 100%;
+    background-color: rgba(65, 105, 225, 0.162);
+}
+
+.form button{
+    margin-left: 2vh;
+    height: 100%;
+    width: 5vh;
+    background-color: inherit;
+    border:1px solid royalblue;
+    color: royalblue;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form button:hover{
+    background-color: rgba(65, 105, 225, 0.244);
+    cursor: pointer;
+
+}

@@ -8,4 +8,10 @@ import { Component, Input } from '@angular/core';
 export class SectionComponent {
   @Input() section: any;
   extraOption: string = '';
+
+  showItems: boolean = false;
+
+  toggleShowItems() {
+    this.showItems = !this.showItems;
+  }
 }

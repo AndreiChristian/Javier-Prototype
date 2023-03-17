@@ -1,22 +1,29 @@
 <div class="container">
     <div class="header">
-        <h4>{{section.name}}</h4>
-        <div class="actions">
-            <button>REQUEST A CALL</button>
-            <button>CONFIGURE LATER</button>
-        </div>
-    </div>
-    <ul>
-        <li *ngFor="let item of section.items">
-            <div class="item-list">
-                <h6>{{item.name}}</h6>
-                <ul>
-                    <li *ngFor="let option of item.options">
-                        <app-option [option]="option"></app-option>
-                    </li>
-                </ul>
-                <input type="text" placeholder="Add an option" [(ngModel)]="extraOption" />
+        <h4 (click)="toggleShowItems()">{{section.name}}
+            <svg *ngIf="!showItems" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 24
+                24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5
+                    8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+                <svg *ngIf="showItems" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0
+                    24 24" stroke-width="1.5" stroke="currentColor" class="w-6
+                    h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5
+                        15.75l7.5-7.5 7.5 7.5" />
+                    </svg>
+
+                </h4>
+                <div class="actions">
+                    <button>REQUEST A CALL</button>
+                    <button>CONFIGURE LATER</button>
+                </div>
             </div>
-        </li>
-    </ul>
-</div>
+            <ul *ngIf="showItems">
+                <app-section-items
+                    *ngFor="let item of section.items"
+                    [item]="item"></app-section-items>
+            </ul>
+        </div>
