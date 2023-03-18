@@ -1,0 +1,14 @@
+.options-container{
+    margin-left: 1vw;
+    display: flex;
+    gap: 0.5vw;
+}
+
+.title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.important{
+    color: #ff0000;
+}

@@ -1,4 +1,7 @@
 import { Component, Input } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { Item, Section } from '../interfaces';
+import * as AddOptionActions from '../store/option.actions';
 
 @Component({
   selector: 'app-section-items',
@@ -6,19 +9,22 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./section-items.component.css'],
 })
 export class SectionItemsComponent {
-  @Input() item: any;
+  @Input() item: Item;
   extraOption: string = '';
 
   showOptions: boolean = true;
 
+  constructor(private store: Store<{ addOption: Section[] }>) {}
+
   addOption() {
-    // this.item.options.push({
-    //   id: `s3i1o${this.item.options.length + 1}`,
-    //   name: this.extraOption,
-    //   value: true,
-    //   important: false,
-    // });
-    // this.extraOption = '';
+    // this.option.value = !this.option.value;
+    this.store.dispatch(
+      new AddOptionActions.addExtraItem({
+        sectionId: this.item.itemId.slice(0, 2),
+        itemId: this.item.itemId.slice(0, 5),
+        optionName: this.extraOption,
+      })
+    );
   }
 
   toggleShowOptions() {

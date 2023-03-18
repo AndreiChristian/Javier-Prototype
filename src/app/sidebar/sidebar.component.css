@@ -66,6 +66,9 @@ svg{
 
 .section{
     margin: 1vh 0;
+    border-bottom: 1px solid #3333332c;
+    gap: 0.1vh;
+    padding-bottom: 1vh;
 }
 
 .section .title{

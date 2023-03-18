@@ -1,6 +1,10 @@
 <div class="items" *ngFor="let item of items">
     <div class="title">{{item.itemName}}</div>
-    <span class="options" *ngFor="let option of item.options">
-        <span *ngIf="option.selected">{{option.optionName}}</span>
-    </span>
+    <div class="options-container">
+        <div class="options" *ngFor="let option of item.options">
+            <span *ngIf="option.selected"
+                [ngClass]="{'important': option.important}">
+                {{option.optionName}} </span>
+        </div>
+    </div>
 </div>

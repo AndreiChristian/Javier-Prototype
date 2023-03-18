@@ -15,6 +15,13 @@ export class OptionComponent implements OnInit {
 
   onSelectImportant() {
     // this.option.important = !this.option.important;
+    this.store.dispatch(
+      new AddOptionActions.selectImportant({
+        sectionId: this.sectionItemId.slice(0, 2),
+        itemId: this.sectionItemId.slice(0, 5),
+        optionId: this.option.optionId.slice(0, 8),
+      })
+    );
   }
 
   onSelectOption() {

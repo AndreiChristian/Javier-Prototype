@@ -1,6 +1,6 @@
 <div class="section" *ngFor="let section of sections">
-    <div class="">{{section.sectionName}}</div>
-    <div>
+    <div class="title">{{section.sectionName}}</div>
+    <div class="item-list">
         <app-items-sidebar [sectionId]="section.sectionId" ></app-items-sidebar>
     </div>
 </div>
