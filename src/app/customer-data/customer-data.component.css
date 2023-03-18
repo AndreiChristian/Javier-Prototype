@@ -12,6 +12,12 @@ section{
     display: flex;
     flex-direction: column;
     gap: 1vh;
+    margin: 1vh;
+}
+
+label{
+    font-weight: bold;
+    margin-left: 3vw;
 }
 
 input{
@@ -22,4 +28,25 @@ input{
     height: 4vh;
     background-color: rgba(65, 105, 225, 0.162);
     color: royalblue;
+    border-bottom: 2px  solid transparent;
+}
+
+input:focus{
+    border-bottom: 2px  solid royalblue;
+}
+
+button{
+    font-size: 1rem;
+    color: royalblue;
+    background-color: inherit;
+    padding: 1vh;
+    margin: 3vh;
+    border:1px solid royalblue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: rgba(65, 105, 225, 0.162);
 }

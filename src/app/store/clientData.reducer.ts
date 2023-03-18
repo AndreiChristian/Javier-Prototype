@@ -1,12 +1,8 @@
-import { Action } from '@ngrx/store';
-
-const initiateState = initialClientState
-
 import * as AddClientDataActions from './clientData.actions';
 import { initialClientState } from './initial.state';
 
 export function addClientDataReducer(
-  state = initiateState,
+  state = initialClientState,
   action: AddClientDataActions.AddClientData
 ) {
   switch (action.type) {

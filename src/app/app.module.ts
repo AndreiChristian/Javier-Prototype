@@ -9,10 +9,11 @@ import { OptionComponent } from './option/option.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SectionItemsComponent } from './section-items/section-items.component';
 import { StoreModule } from '@ngrx/store';
-import { addOptionReducer } from './option/store/add-option.reducer';
+
 import { CustomerDataComponent } from './customer-data/customer-data.component';
 
 import { addClientDataReducer } from './store/clientData.reducer';
+import { addOptionReducer } from './store/option.reducer';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { addClientDataReducer } from './store/clientData.reducer';
     FormsModule,
     StoreModule.forRoot({
       addClientData: addClientDataReducer,
+      addOption:addOptionReducer
     }),
   ],
   providers: [],

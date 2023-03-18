@@ -12,13 +12,13 @@ export class SectionItemsComponent {
   showOptions: boolean = false;
 
   addOption() {
-    this.item.options.push({
-      id: `s3i1o${this.item.options.length + 1}`,
-      name: this.extraOption,
-      value: true,
-      important: false,
-    });
-    this.extraOption = '';
+    // this.item.options.push({
+    //   id: `s3i1o${this.item.options.length + 1}`,
+    //   name: this.extraOption,
+    //   value: true,
+    //   important: false,
+    // });
+    // this.extraOption = '';
   }
 
   toggleShowOptions() {
