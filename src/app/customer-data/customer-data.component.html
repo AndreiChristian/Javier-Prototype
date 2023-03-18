@@ -1,15 +1,27 @@
+
 <section>
+    <div class="title"></div>
     <div class="group">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" [(ngModel)]="customer.name" >
+        <input type="text" id="name" name="name" [(ngModel)]="customer.name">
     </div>
     <div class="group">
         <label for="email">Email</label>
-        <input type="text" id="email" name="email" [(ngModel)]="customer.email">
+        <input type="text" id="email" name="email"
+            [(ngModel)]="customer.email">
     </div>
     <div class="group">
         <label for="phone">Phone</label>
-        <input type="text" id="phone" name="phone" [(ngModel)]="customer.phone">
+        <input type="text" id="phone" name="phone"
+            [(ngModel)]="customer.phone">
     </div>
-    <button (click)="addCustomerData()">ADD DATA</button>
+    <p>Our goal is to make you feel at home wherever you go. Fill out our quick
+        form or request a call and we'll personalize your experience to your
+        unique needs and preferences. Let us help you create unforgettable
+        memories!</p>
+    <div class="links">
+        <a routerLink="/form" (click)="addCustomerData()">GO TO FORM</a>
+        <a (click)="addCustomerData()">CONFIGURE LATER</a>
+    </div>
+
 </section>

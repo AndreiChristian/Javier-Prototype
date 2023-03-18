@@ -13,6 +13,8 @@ export class OptionComponent implements OnInit {
   @Input() sectionItemId: string;
   options: Option;
 
+  imgPath: string = '';
+
   onSelectImportant() {
     // this.option.important = !this.option.important;
     this.store.dispatch(
@@ -38,10 +40,6 @@ export class OptionComponent implements OnInit {
   constructor(private store: Store<{ addOption: Section[] }>) {}
 
   ngOnInit() {
-    // this.store.select('addOption').subscribe((stateSections) => {
-    //     stateSections[+this.sectionItemId[1] - 1].items[
-    //       +this.sectionItemId[4] - 1
-    //     ].options[+this.option.optionId[7] - 1]
-    // });
+    this.imgPath = `assets/images/${this.option.optionName}.jpeg`;
   }
 }

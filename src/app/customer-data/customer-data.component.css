@@ -1,60 +1,103 @@
-section{
-    width: 73vw;
-    box-sizing: border-box;
-    padding: 1vw;
-    margin: 1vw;
-    border-radius: 20px;
-    box-shadow: 0 0 3px 3px rgba(65, 105, 225, 0.171);
-    
+section {
+  width: 90vw;
+  box-sizing: border-box;
+  padding: 1vw;
+  margin: 1vw;
+  border-radius: 20px;
+  box-shadow: 0 0 3px 3px rgba(65, 105, 225, 0.171);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 10vh;
 }
 
 @media screen and (max-width: 768px) {
-    section{
-        width: 95vh;
-        /* margin: 0; */
-    }
-
+  section {
+    width: 95vh;
+    /* margin: 0; */
+  }
 }
 
-.group{
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    margin: 1vh;
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin: 1vh;
 }
 
-label{
-    font-weight: bold;
-    margin-left: 3vw;
+label {
+  font-weight: bold;
+  margin-left: 3vw;
 }
 
-input{
-    width:50%;
-    border: none;
-    outline: none;
-    padding: 0 1vh;
-    height: 4vh;
-    background-color: rgba(65, 105, 225, 0.162);
-    color: royalblue;
-    border-bottom: 2px  solid transparent;
+input {
+  width: 50vw;
+  border: none;
+  outline: none;
+  padding: 0 1vh;
+  height: 4vh;
+  background-color: rgba(65, 105, 225, 0.162);
+  color: royalblue;
+  border-bottom: 2px solid transparent;
 }
 
-input:focus{
-    border-bottom: 2px  solid royalblue;
+input:focus {
+  border-bottom: 2px solid royalblue;
 }
 
-button{
-    font-size: 1rem;
-    color: royalblue;
-    background-color: inherit;
-    padding: 1vh;
-    margin: 3vh;
-    border:1px solid royalblue;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+button {
+  font-size: 1rem;
+  color: royalblue;
+  background-color: inherit;
+  padding: 1vh;
+  margin: 3vh;
+  border: 1px solid royalblue;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-button:hover{
-    background-color: rgba(65, 105, 225, 0.162);
+button:hover {
+  background-color: rgba(65, 105, 225, 0.162);
+}
+
+p {
+  width: 80%;
+  color: #333333b8;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+a {
+  font-size: 1.3rem;
+  padding: 1vh;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 15vw;
+  text-align: center;
+}
+
+a:nth-child(1) {
+  color: mediumseagreen;
+  border: 1px solid mediumseagreen;
+}
+
+a:nth-child(1):hover {
+  background-color: rgba(60, 179, 114, 0.255);
+}
+
+a:nth-child(2) {
+  color: royalblue;
+  border: 1px solid royalblue;
+}
+
+a:nth-child(2):hover {
+  background-color: rgba(65, 105, 225, 0.162);
 }

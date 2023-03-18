@@ -3,6 +3,7 @@ export interface Option {
   optionName: string;
   selected: boolean;
   important: boolean;
+  img?: boolean;
 }
 
 export interface Item {
