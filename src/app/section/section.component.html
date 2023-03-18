@@ -17,9 +17,13 @@
 
                 </div>
                 <div class="actions">
-                    <button 
-                    [ngClass]="{'xoxo': section.requestedCall}"
-                        (click)="onRequestCall()">REQUEST A CALL</button>
+                    <button
+                        [ngClass]="{'callRequested':
+                        this.stateSection.requestedCall}"
+                        (click)="onRequestCall()">
+                        {{ this.stateSection.requestedCall ? "CALL REQUESTED" :
+                        "REQUEST A CALL" }}
+                    </button>
                     <button>CONFIGURE LATER</button>
                 </div>
             </div>

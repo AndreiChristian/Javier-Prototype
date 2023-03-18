@@ -41,6 +41,7 @@
   background-color: rgba(65, 105, 225, 0.198);
 }
 
-.xoxo {
-  background-color: red;
+.callRequested {
+  color: white !important;
+  background-color: mediumseagreen !important;
 }

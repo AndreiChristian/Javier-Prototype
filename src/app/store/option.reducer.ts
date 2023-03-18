@@ -97,7 +97,7 @@ export function addOptionReducer(
         }
         return {
           ...section,
-          requestedCall: true,
+          requestedCall: !section.requestedCall,
         };
       });
 
