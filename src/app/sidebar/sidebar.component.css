@@ -84,18 +84,15 @@ svg {
   color: #333733;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 800px) {
   nav {
     display: block;
-    width: 100%;
   }
   aside {
     width: 100vw;
     height: fit-content;
     z-index: 10;
     box-sizing: border-box;
+    z-index: 5;
   }
-
-}
-
-
+} */
