@@ -17,7 +17,9 @@
 
                 </div>
                 <div class="actions">
-                    <button>REQUEST A CALL</button>
+                    <button 
+                    [ngClass]="{'xoxo': section.requestedCall}"
+                        (click)="onRequestCall()">REQUEST A CALL</button>
                     <button>CONFIGURE LATER</button>
                 </div>
             </div>

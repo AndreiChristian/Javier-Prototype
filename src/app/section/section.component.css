@@ -5,11 +5,11 @@
   margin: 0 3vh;
 }
 
-.title{
+.title {
   font-size: 2rem;
 }
 
-.header svg{
+.header svg {
   width: 3vh;
 }
 
@@ -41,3 +41,6 @@
   background-color: rgba(65, 105, 225, 0.198);
 }
 
+.xoxo {
+  background-color: red;
+}

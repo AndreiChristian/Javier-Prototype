@@ -15,16 +15,11 @@ export class ItemsSidebarComponent implements OnInit {
   constructor(private store: Store<{ addOption: Section[] }>) {}
 
   ngOnInit() {
-    // this.sections = this.sectionService.sections;
-    // this.store.select('addOption').subscribe((initialSections) => {
-    //   this.sections = initialSections;
-    // });
     this.store.select('addOption').subscribe((initialSections) => {
       const section = initialSections.find(
         (section) => section.sectionId === this.sectionId
       );
       this.items = section.items;
-      console.log(this.items);
     });
   }
 }

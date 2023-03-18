@@ -6,6 +6,7 @@ export const ADD_CLIENT_DATA = 'ADD_CLIENT_DATA';
 export const SELECT_OPTION = 'SELECT_OPTION';
 export const SELECT_IMPORTANT = 'SELECT_IMPORTANT';
 export const ADD_EXTRA_ITEM = 'ADD_EXTRA_ITEM';
+export const REQUEST_CALL = 'REQUEST_CALL';
 
 export class addOption implements Action {
   readonly type = SELECT_OPTION;
@@ -25,4 +26,18 @@ export class addExtraItem implements Action {
   constructor(public payload: any) {}
 }
 
-export type optionTypes = selectImportant | addOption | addExtraItem;
+export class requestCall implements Action {
+  readonly type = REQUEST_CALL;
+
+  constructor(
+    public payload: {
+      sectionId: string;
+    }
+  ) {}
+}
+
+export type optionTypes =
+  | selectImportant
+  | addOption
+  | addExtraItem
+  | requestCall;

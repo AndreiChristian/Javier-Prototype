@@ -90,6 +90,16 @@ export function addOptionReducer(
           }),
         };
       });
+    case AddOptionActions.REQUEST_CALL:
+      return state.map((section) => {
+        if (section.sectionId !== action.payload.sectionId) {
+          return section;
+        }
+        return {
+          ...section,
+          requestedCall: true,
+        };
+      });
 
     default:
       return state;
