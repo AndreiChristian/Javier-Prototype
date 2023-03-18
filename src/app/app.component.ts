@@ -9,7 +9,7 @@ import { SectionService } from './section.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  sections: any = [];
+  sections: Section[] = [];
 
   constructor(
     private sectionService: SectionService,
@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.sections = this.sectionService.sections;
+    // this.sections = this.sectionService.sections;
     this.store.select("addOption").subscribe(initialSections => {
       this.sections = initialSections
     })

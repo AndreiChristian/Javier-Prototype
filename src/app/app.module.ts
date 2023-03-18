@@ -14,6 +14,9 @@ import { CustomerDataComponent } from './customer-data/customer-data.component';
 
 import { addClientDataReducer } from './store/clientData.reducer';
 import { addOptionReducer } from './store/option.reducer';
+import { SectionSidebarComponent } from './sidebar/section-sidebar/section-sidebar.component';
+import { ItemsSidebarComponent } from './sidebar/items-sidebar/items-sidebar.component';
+import { OptionsSidebarComponent } from './sidebar/options-sidebar/options-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { addOptionReducer } from './store/option.reducer';
     SidebarComponent,
     SectionItemsComponent,
     CustomerDataComponent,
+    SectionSidebarComponent,
+    ItemsSidebarComponent,
+    OptionsSidebarComponent,
   ],
   imports: [
     BrowserModule,
