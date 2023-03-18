@@ -63,3 +63,13 @@ aside{
 svg{
     width: clamp(1rem, 1.5vw, 1.5rem);
 }
+
+.section{
+    margin: 1vh 0;
+}
+
+.section .title{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #333733;
+}

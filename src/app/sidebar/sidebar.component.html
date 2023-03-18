@@ -35,9 +35,10 @@
                 </div>
             </div>
             <div class="section">
-                <p> {{(client|async).name}} </p>
-                <p> {{(client|async).email}} </p>
-                <p> {{(client|async).phone}} </p>
+                <div class="title">PERSONAL INFO</div>
+                <div> {{(client|async).name}} </div>
+                <div> {{(client|async).email}} </div>
+                <div> {{(client|async).phone}} </div>
             </div>
             <app-section-sidebar></app-section-sidebar>
         </aside>

@@ -9,7 +9,7 @@ export class SectionItemsComponent {
   @Input() item: any;
   extraOption: string = '';
 
-  showOptions: boolean = false;
+  showOptions: boolean = true;
 
   addOption() {
     // this.item.options.push({

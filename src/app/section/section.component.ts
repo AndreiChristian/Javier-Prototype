@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-section',
@@ -9,9 +9,10 @@ export class SectionComponent {
   @Input() section: any;
   extraOption: string = '';
 
-  showItems: boolean = false;
+  showItems: boolean = true;
 
   toggleShowItems() {
     this.showItems = !this.showItems;
   }
+
 }

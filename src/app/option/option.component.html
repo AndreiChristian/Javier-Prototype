@@ -1,5 +1,5 @@
 <div class="option">
-    <div class="checkbox" (click)="onSelectOption()" >
+    <div class="checkbox" (click)="onSelectOption()">
         <svg *ngIf="option.selected === true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none" viewBox="0 0 24 24"
@@ -9,8 +9,8 @@
             </svg>
 
         </div>
-        <div class="name" (click)="onSelectOption()" >
-            {{option.optionName | uppercase }} {{option.optionId}}
+        <div class="name" (click)="onSelectOption()">
+            {{option.optionName | uppercase }}
         </div>
         <button [ngClass]=" option.important? 'important' :'not' "
             (click)="onSelectImportant()">
