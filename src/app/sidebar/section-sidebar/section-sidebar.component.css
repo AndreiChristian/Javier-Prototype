@@ -12,3 +12,11 @@
     font-size: 1rem;
     font-weight: bold;
 }
+
+.callRequested{
+    font-size: 0.6rem;
+    background-color: mediumseagreen;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+}

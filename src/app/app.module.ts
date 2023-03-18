@@ -17,6 +17,7 @@ import { addOptionReducer } from './store/option.reducer';
 import { SectionSidebarComponent } from './sidebar/section-sidebar/section-sidebar.component';
 import { ItemsSidebarComponent } from './sidebar/items-sidebar/items-sidebar.component';
 import { OptionsSidebarComponent } from './sidebar/options-sidebar/options-sidebar.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { OptionsSidebarComponent } from './sidebar/options-sidebar/options-sideb
     SectionSidebarComponent,
     ItemsSidebarComponent,
     OptionsSidebarComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
