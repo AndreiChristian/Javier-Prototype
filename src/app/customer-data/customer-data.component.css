@@ -8,6 +8,14 @@ section{
     
 }
 
+@media screen and (max-width: 768px) {
+    section{
+        width: 95vh;
+        /* margin: 0; */
+    }
+
+}
+
 .group{
     display: flex;
     flex-direction: column;

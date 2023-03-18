@@ -12,9 +12,17 @@ import { AddClientData } from '../store/clientData.actions';
 export class SidebarComponent {
   client: Observable<Client>;
 
+  showDropdown = false;
+
   constructor(private store: Store<{ addClientData: Client }>) {}
 
   ngOnInit(): void {
     this.client = this.store.select('addClientData');
   }
+
+  toggleDropdown() {
+    this.showDropdown = !this.showDropdown;
+  }
+
+  
 }
