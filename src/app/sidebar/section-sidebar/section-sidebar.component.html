@@ -1,4 +1,6 @@
-<li class="section" *ngFor="let section of sections">
+<div class="section" *ngFor="let section of sections">
     <div class="">{{section.sectionName}}</div>
-    <app-items-sidebar></app-items-sidebar>
-</li>
+    <div>
+        <app-items-sidebar [sectionId]="section.sectionId" ></app-items-sidebar>
+    </div>
+</div>

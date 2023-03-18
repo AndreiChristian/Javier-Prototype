@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Section } from 'src/app/interfaces';
 
@@ -7,7 +7,7 @@ import { Section } from 'src/app/interfaces';
   templateUrl: './section-sidebar.component.html',
   styleUrls: ['./section-sidebar.component.css'],
 })
-export class SectionSidebarComponent {
+export class SectionSidebarComponent implements OnInit {
   sections: Section[] = [];
 
   constructor(private store: Store<{ addOption: Section[] }>) {}
