@@ -1,4 +1,4 @@
-<div *ngIf="!option.img" class="option">
+<div class="option">
     <div class="checkbox" (click)="onSelectOption()">
         <svg *ngIf="option.selected === true"
             xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +18,6 @@
         </button>
     </div>
 
-<div  *ngIf="option.img" class="img-option">
+    <!-- <div  *ngIf="option.img" class="img-option">
     <img [src]="imgPath" [alt]="option.optionName">
-</div>
+</div> -->

@@ -1,7 +1,7 @@
 section {
-  width: 90vw;
+  width: 90%;
   box-sizing: border-box;
-  padding: 1vw;
+  padding: 3vw;
   margin: 1vw;
   border-radius: 20px;
   box-shadow: 0 0 3px 3px rgba(65, 105, 225, 0.171);
@@ -11,14 +11,10 @@ section {
   flex-direction: column;
   margin: 0 auto;
   margin-top: 10vh;
+  
 }
 
-@media screen and (max-width: 768px) {
-  section {
-    width: 95vh;
-    /* margin: 0; */
-  }
-}
+/*  */
 
 .group {
   display: flex;
@@ -75,6 +71,8 @@ p {
   gap: 3vw;
 }
 
+
+
 a {
   font-size: 1.3rem;
   padding: 1vh;
@@ -94,10 +92,21 @@ a:nth-child(1):hover {
 }
 
 a:nth-child(2) {
+  font-size: 1rem;
   color: royalblue;
   border: 1px solid royalblue;
 }
 
 a:nth-child(2):hover {
   background-color: rgba(65, 105, 225, 0.162);
+}
+
+@media screen and (max-width:768px){
+  .links{
+    flex-direction: column;
+  }
+
+  a{
+    width: 80%;
+  }
 }
